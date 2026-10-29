@@ -288,10 +288,10 @@ footer .legal{margin-top:40px;padding-top:18px;border-top:1px solid var(--navy-l
   <section class="contact mist" id="contact">
     <div class="wrap">
       <h2 data-i18n="t38">Déployez EXAE sur <em>votre flotte</em></h2>
-      <p class="lead" data-i18n="t39">Exploitants de drones, d'avions ou d'hélicoptères, constructeurs, services de l'État : contactez-nous pour déployer EXAE.</p>
+      <p class="lead" data-i18n="t39">Exploitants de drones, d'avions ou d'hélicoptères, constructeurs, services de l'État : contactez EXTENSEE pour déployer EXAE.</p>
       <div class="row">
-        <button class="btn" id="copy" type="button"><span id="copylab" data-i18n="t40">Copier l'adresse</span> <span class="arr">→</span></button>
-        <span class="bracket"><code id="mail">contact@exae.eu</code></span>
+        <a class="btn" href="https://www.extensee.com" target="_blank" rel="noopener" data-i18n="t40">Contacter EXTENSEE <span class="arr">→</span></a>
+        <a class="bracket" href="https://www.extensee.com" target="_blank" rel="noopener">www.extensee.com</a>
       </div>
     </div>
   </section>
@@ -318,7 +318,7 @@ footer .legal{margin-top:40px;padding-top:18px;border-top:1px solid var(--navy-l
           <li>EXTENSEE SAS</li>
           <li>612 rue de la Chaude Rivière</li>
           <li>59800 Lille, France</li>
-          <li>contact@exae.eu</li>
+          <li><a href="https://www.extensee.com" target="_blank" rel="noopener">www.extensee.com</a></li>
         </ul>
       </div>
     </div>
@@ -327,7 +327,7 @@ footer .legal{margin-top:40px;padding-top:18px;border-top:1px solid var(--navy-l
 </footer>
 <script>
 (function(){
-var EN={"t0": "Platform", "t1": "Features", "t2": "Contact", "t3": "Deploy EXAE <span class=\"arr\">→</span>", "t4": "Flight operations management platform", "t5": "<em>One platform</em> to manage all your flight operations", "t6": "Drones, aeroplanes or helicopters: EXAE centralises missions, crews, fleet, airworthiness, safety, compliance and reporting in a single environment, for any aircraft operator.", "t7": "Explore the platform", "t8": "Safer operations", "t9": "Higher efficiency", "t10": "Demo fleet · main base", "t11": "6 aircraft · 2 crews", "t12": "Sample data", "t13": "The platform", "t14": "<em>Six modules</em>, one environment", "t15": "From mission planning to activity review, your whole operation is managed in one place.", "t16": "Mission Operations", "t17": "Mission planning, global calendar, pilot and aircraft assignment, mission checklists, multi-country operations.", "t18": "Aircraft, sensors, batteries, parts, consumables, availability, maintenance, compliance and traceability.", "t19": "Crew Management", "t20": "Pilots, qualifications, licences, flight hours, recurring expiries and type-specific qualifications.", "t21": "Flight Operations", "t22": "Flight reports, flight legs, schedules, cycles, fuel, attachments and PDF export.", "t23": "Safety &amp; Compliance", "t24": "Incidents, risk register, audits, quality gaps and regulatory compliance tracking.", "t25": "Data &amp; Performance", "t26": "Operational statistics, country and site tracking, activity dashboards, exports and recurring reports.", "t27": "Role-based access", "t28": "Automated alerts", "t29": "Multi-language: FR / EN / DE", "t30": "Cloud platform", "t31": "PDF &amp; Excel export", "t32": "Turning flight operations into real impact.", "t33": "Airworthiness, qualifications and compliance tracked continuously, before every flight.", "t34": "A single entry feeds the fleet, the crews and the reporting.", "t35": "A more sustainable tomorrow", "t36": "Well-tracked aircraft fly longer and more safely.", "t37": "Developed by", "t38": "Deploy EXAE on <em>your fleet</em>", "t39": "Drone, aeroplane and helicopter operators, manufacturers, government services: contact us to deploy EXAE.", "t40": "Copy address", "t41": "Flight operations management platform, developed by EXTENSEE.", "t42": "Contact details_"}, MSG={fr:{ok:'Adresse copiée',sel:'Adresse sélectionnée'},en:{ok:'Address copied',sel:'Address selected'}};
+var EN={"t0": "Platform", "t1": "Features", "t2": "Contact", "t3": "Deploy EXAE <span class=\"arr\">→</span>", "t4": "Flight operations management platform", "t5": "<em>One platform</em> to manage all your flight operations", "t6": "Drones, aeroplanes or helicopters: EXAE centralises missions, crews, fleet, airworthiness, safety, compliance and reporting in a single environment, for any aircraft operator.", "t7": "Explore the platform", "t8": "Safer operations", "t9": "Higher efficiency", "t10": "Demo fleet · main base", "t11": "6 aircraft · 2 crews", "t12": "Sample data", "t13": "The platform", "t14": "<em>Six modules</em>, one environment", "t15": "From mission planning to activity review, your whole operation is managed in one place.", "t16": "Mission Operations", "t17": "Mission planning, global calendar, pilot and aircraft assignment, mission checklists, multi-country operations.", "t18": "Aircraft, sensors, batteries, parts, consumables, availability, maintenance, compliance and traceability.", "t19": "Crew Management", "t20": "Pilots, qualifications, licences, flight hours, recurring expiries and type-specific qualifications.", "t21": "Flight Operations", "t22": "Flight reports, flight legs, schedules, cycles, fuel, attachments and PDF export.", "t23": "Safety &amp; Compliance", "t24": "Incidents, risk register, audits, quality gaps and regulatory compliance tracking.", "t25": "Data &amp; Performance", "t26": "Operational statistics, country and site tracking, activity dashboards, exports and recurring reports.", "t27": "Role-based access", "t28": "Automated alerts", "t29": "Multi-language: FR / EN / DE", "t30": "Cloud platform", "t31": "PDF &amp; Excel export", "t32": "Turning flight operations into real impact.", "t33": "Airworthiness, qualifications and compliance tracked continuously, before every flight.", "t34": "A single entry feeds the fleet, the crews and the reporting.", "t35": "A more sustainable tomorrow", "t36": "Well-tracked aircraft fly longer and more safely.", "t37": "Developed by", "t38": "Deploy EXAE on <em>your fleet</em>", "t39": "Drone, aeroplane and helicopter operators, manufacturers, government services: contact EXTENSEE to deploy EXAE.", "t40": "Contact EXTENSEE <span class=\"arr\">→</span>", "t41": "Flight operations management platform, developed by EXTENSEE.", "t42": "Contact details_"}, MSG={fr:{ok:'Adresse copiée',sel:'Adresse sélectionnée'},en:{ok:'Address copied',sel:'Address selected'}};
 var FR={}, cur='fr';
 document.querySelectorAll('[data-i18n]').forEach(function(el){FR[el.dataset.i18n]=el.innerHTML});
 function setLang(l){
@@ -340,7 +340,7 @@ document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener
 var saved=null; try{saved=localStorage.getItem('exae-lang')}catch(e){}
 var nav=(navigator.language||'fr').toLowerCase();
 setLang(saved||(nav.indexOf('fr')===0?'fr':'en'));
-document.getElementById('copy').addEventListener('click',function(){
+var cb=document.getElementById('copy'); if(cb) cb.addEventListener('click',function(){
   var lab=document.getElementById('copylab'), t=document.getElementById('mail').textContent, k=lab.dataset.i18n;
   function reset(){setTimeout(function(){lab.innerHTML=cur==='en'?EN[k]:FR[k]},2000)}
   function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r);lab.textContent=MSG[cur].sel;reset()}
