@@ -1,11 +1,11 @@
-# Site vitrine EXEA — exea.eu
+# Site vitrine EXAE — exae.eu
 
-Site statique bilingue (FR / EN) présentant EXEA, la plateforme de gestion des opérations aériennes développée par EXTENSEE.
+Site statique bilingue (FR / EN) présentant EXAE, la plateforme de gestion des opérations aériennes développée par EXTENSEE.
 
 Tout tient dans `index.html` : styles, logo et script de changement de langue sont intégrés. Aucune compilation n'est nécessaire.
 
 ## Hébergement
-Publié avec GitHub Pages depuis la branche `main`, à la racine. Le fichier `CNAME` associe le site au domaine `exea.eu`.
+Publié avec GitHub Pages depuis la branche `main`, à la racine. Le fichier `CNAME` associe le site au domaine `exae.eu`.
 
 ## Mise à jour
 Modifier `index.html` puis pousser sur `main` : le site se met à jour en une à deux minutes.
