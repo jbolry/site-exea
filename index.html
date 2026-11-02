@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="EXAE, plateforme de gestion des opérations aériennes : missions, équipages, flotte, navigabilité, sécurité, conformité et reporting dans un environnement unique.">
+<meta name="description" content="EXAE — Extensee Aviation Ecosystem: one platform for missions, crews, fleet, airworthiness, safety, compliance and reporting, for any aircraft operator.">
 <meta property="og:title" content="EXAE — Extensee Aviation Ecosystem">
-<meta property="og:description" content="EXAE, plateforme de gestion des opérations aériennes : missions, équipages, flotte, navigabilité, sécurité, conformité et reporting dans un environnement unique.">
+<meta property="og:description" content="EXAE — Extensee Aviation Ecosystem: one platform for missions, crews, fleet, airworthiness, safety, compliance and reporting, for any aircraft operator.">
 <meta property="og:url" content="https://exae.eu/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23143B62%27/%3E%3Cpath d=%27M16 7 26 25H6Z%27 fill=%27%23fff%27/%3E%3Cpath d=%27M16 17 21 25H11Z%27 fill=%27%23E41F13%27/%3E%3C/svg%3E">
 <style>html{scroll-behavior:smooth}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -191,7 +191,7 @@ footer .legal{margin-top:40px;padding-top:18px;border-top:1px solid var(--navy-l
       <a href="#contact" data-i18n="t2">Contact</a>
     </nav>
     <div class="hdr-r">
-      <div class="lang" role="group" aria-label="Langue / Language"><button type="button" id="lang-fr" data-l="fr" aria-pressed="true">FR</button><button type="button" id="lang-en" data-l="en" aria-pressed="false">EN</button></div>
+      <div class="lang" role="group" aria-label="Langue / Language"><button type="button" id="lang-en" data-l="en" aria-pressed="true">EN</button><button type="button" id="lang-fr" data-l="fr" aria-pressed="false">FR</button></div>
       <a class="btn" href="#contact" data-i18n="t3">Déployez EXAE <span class="arr">→</span></a>
     </div>
   </div>
@@ -349,8 +349,7 @@ function setLang(l){
 }
 document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l)})});
 var saved=null; try{saved=localStorage.getItem('exae-lang')}catch(e){}
-var nav=(navigator.language||'fr').toLowerCase();
-setLang(saved||(nav.indexOf('fr')===0?'fr':'en'));
+setLang(saved==='fr'?'fr':'en');
 var cb=document.getElementById('copy'); if(cb) cb.addEventListener('click',function(){
   var lab=document.getElementById('copylab'), t=document.getElementById('mail').textContent, k=lab.dataset.i18n;
   function reset(){setTimeout(function(){lab.innerHTML=cur==='en'?EN[k]:FR[k]},2000)}
